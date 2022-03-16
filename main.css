@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+main {
+    margin: 15px;
+    min-width: 300px;
+    display: grid;
+    justify-content: center;
+}
+.first-part {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 15px;
+}
+.first-part h1 {
+    margin: 0;
+}
+.header-logo {
+    background: url("images/bg-header-mobile.png");
+    width: 100%;
+    text-align: center;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    padding: 0 22px;
+    margin-top: 85px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.ios-button {
+    width: 230px;
+    border-radius: 20px;
+    margin: auto;
+    background: hsl(171, 66%, 44%);
+    height: 2.5rem;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+}
+.ios-button:hover,
+.ios-button:active {
+    background: rgb(156, 201, 231);
+    cursor: pointer;
+}
+.mac-button {
+    width: 230px;
+    border-radius: 20px;
+    margin: auto;
+    background: hsl(233, 100%, 69%);
+    height: 2.5rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.mac-button:hover,
+.mac-button:active {
+    background: rgb(156, 201, 231);
+    cursor: pointer;
+}
+
+
+.second-part {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.first-image img {
+    width: 320px;
+    margin: 27px 0;
+}
+h3 {
+    margin-bottom: 0;
+}
+
+.third-part {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.second-image img {
+    width: 320px;
+    margin: 27px 0 40px;
+}
+
+.fourth-part {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+}
+.fifth-part {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    row-gap: 57px;
+    margin: 70px 0;
+}
+.sixth-part {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    row-gap: 15px;
+}
+.seventh-part {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: hsl(189, 21%, 82%);
+    padding: 56px 0;
+    margin-top: 60px;
+}
+.links {
+    display: flex;
+    column-gap: 55px;
+    padding: 2rem 0;
+}
+
+
+
+@media (min-width: 376px) {
+    main {
+        min-width: 800px;
+    }
+    /* ----------------------------------------FIRST PART */
+    .header-logo {
+        background: url("images/bg-header-desktop.png");
+    }
+
+    .first-part p {
+        padding: 0 346px;
+    }
+
+   
+    .buttons {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        margin: auto;
+        
+    }
+    .ios-button {
+        margin: 0;
+    }
+    /*-----------------------------------------ALL*/
+    p {
+        padding: 0 192px;
+    }
+    h2 {
+        margin-top: 85px;
+    }
+    /* -------------------------------SECOND PART */
+    .second-part {
+        display: grid;
+        grid-template-columns: 375px 782px;
+        justify-content: center;
+    }
+    .second-part h2 {
+        grid-column: 1/span 2;
+    }
+    .second-part .first-pharagraph {
+        grid-column: 1/span 2;
+        text-align: center;
+    }
+    .first-image {
+        grid-row: 3/span 6;
+    }
+    .first-image img {
+        width: 485px;
+    }
+    .second-part p {
+        text-align: left;
+    }
+
+    .second-image img {
+        width: 782px;
+    }
+    /*----------------------------THIRD PART*/
+    .third-part p {
+        padding: 0 346px;
+    }
+    /*------------------------ FOURTH PART */
+    .tools {
+        display: grid;
+        grid-template-columns: 405px 405px 405px;
+        align-items: baseline;
+    }
+    .tools p {
+        padding: 0;
+    }
+    /*----------------------------FIFTH PART*/
+    .fifth-part {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 100px;
+    }
+    /* ------------------------SEVENTH PART */
+    .seventh-part {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px 200px;
+        align-items: normal;
+        justify-content: center;
+        text-align: unset;
+    }
+    .seventh-part p {
+        padding: 0;
+    }
+    .bottom-logo {
+        grid-row: 1/3;
+    }
+    .links {
+        grid-column: 5/span 2;
+        grid-row: 1;
+        align-items: end;
+    }
+
+}
